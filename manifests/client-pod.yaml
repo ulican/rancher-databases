@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: client
+spec:
+  containers:
+    - name: client
+      image: bitnami/minideb
+      command: ["/bin/bash", "-c", "sleep infinity"]
+      stdin: true
+      tty: true
