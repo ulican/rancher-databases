@@ -233,9 +233,9 @@ helm uninstall mongo-db
 
 
 
-## 5 · MSSQL Deployment & CRUD
+## 1 · MSSQL Deployment & CRUD
 
-### 5.1 Deploy Microsoft SQL Server with YAML
+### 1.1 Deploy Microsoft SQL Server with YAML
 
 **`manifests/mssql-deployment.yaml`**
 
@@ -289,7 +289,7 @@ kubectl get svc mssql
 
 Expected: pod `mssql-xxxxx` **Running**, service `mssql` on port **1433**.
 
-### 5.2 Connect & CRUD Test (MSSQL)
+### 1.2 Connect & CRUD Test (MSSQL)
 
 From PowerShell, launch a temporary client pod:
 
@@ -330,7 +330,7 @@ Exit the pod shell:
 exit
 ```
 
-### 5.3 Clean-up
+### 1.3 Clean-up
 
 ```powershell
 kubectl delete -f .\manifests\mssql-deployment.yaml
